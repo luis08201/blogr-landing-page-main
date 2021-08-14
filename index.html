@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="stylesheet" href="css/estilos.css">
   <title>Frontend Mentor | [Blogr]</title>
 
 </head>
+
 <body>
- <!--  Product
+  <header class="main__header">
+    <div class="submain__header margenes">
+      <nav class="header__navbar">
+        <div class="header__logo">
+          <img src="img/logo.svg" alt="" class="header__img">
+        </div>
+        <ul class="header__menu">
+          <div class="dropdown">
+            <button class="dropbtn">Product</button>
+            <div class="dropdown-content" style="left:0;">
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">Integrations</a>
+            </div>
+          </div>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+          <div class="dropdown">
+            <button class="dropbtn">Company</button>
+            <div class="dropdown-content">
+              <a href="#"> About</a>
+              <a href="#"> Team</a>
+              <a href="#">Blog </a>
+              <a href="#">Careers </a>
+            </div>
+          </div>
 
-  Company
+          <div class="dropdown">
+            <button class="dropbtn">Connect</button>
+            <div class="dropdown-content">
+              <a href="#"> Contact</a>
+              <a href="#"> Newsletter</a>
+              <a href="#">LinkedIn </a>
+            </div>
+          </div>
+        </ul>
+      </nav>
 
-  About
-  Team
-  Blog
-  Careers
+    </div>
+  </header>
 
-  Connect
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+
+
+
+
+  <!--  
+
 
   A modern publishing platform
   Grow your audience and build your online brand
@@ -90,5 +119,29 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script>
+    const btn_product = document.querySelector('.header__btn-product');
+    const product__menu = document.querySelector('.product__menu');
+
+    const btn_company = document.querySelector('.header__btn-company');
+    const company__menu = document.querySelector('.company__menu');
+
+    function navbar_product() {
+
+      btn_product.classList.toggle('active');
+      product__menu.classList.toggle('active');
+
+
+    }
+
+    function navbar_company() {
+
+      btn_company.classList.toggle('active');
+      company__menu.classList.toggle('active');
+
+    }
+  </script>
 </body>
+
 </html>
