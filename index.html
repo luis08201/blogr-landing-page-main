@@ -14,44 +14,62 @@
 
 <body>
   <header class="main__header">
-    <div class="submain__header margenes">
-      <nav class="header__navbar">
-        <div class="header__logo">
+    <div class="submain__header">
+      <nav class="header__logo">
+        <figure class="header__picture">
           <img src="img/logo.svg" alt="" class="header__img">
-        </div>
-        <ul class="header__menu">
-          <div class="dropdown">
-            <button class="dropbtn">Product</button>
-            <div class="dropdown-content" style="left:0;">
-              <a href="#">Overview</a>
-              <a href="#">Pricing</a>
-              <a href="#">Marketplace</a>
-              <a href="#">Features</a>
-              <a href="#">Integrations</a>
-            </div>
-          </div>
-
-          <div class="dropdown">
-            <button class="dropbtn">Company</button>
-            <div class="dropdown-content">
-              <a href="#"> About</a>
-              <a href="#"> Team</a>
-              <a href="#">Blog </a>
-              <a href="#">Careers </a>
-            </div>
-          </div>
-
-          <div class="dropdown">
-            <button class="dropbtn">Connect</button>
-            <div class="dropdown-content">
-              <a href="#"> Contact</a>
-              <a href="#"> Newsletter</a>
-              <a href="#">LinkedIn </a>
-            </div>
-          </div>
-        </ul>
+        </figure>
+        <div class="menuToogle"></div>
       </nav>
+      <nav class="header__navbar">
 
+        <ul class="navbar__menu">
+          <li class="navbar__list">
+            <div class="navbar__dropdown">
+              <button class="navbar__dropbtn">Product
+                <div class="navbar__dropbtn--ico"></div>
+              </button>
+              <div class="navbar__dropdown--content">
+                <a href="" class="navbar__dropdown--link">Overview</a>
+                <a href="" class="navbar__dropdown--link">Pricing</a>
+                <a href="" class="navbar__dropdown--link">Marketplace</a>
+                <a href="" class="navbar__dropdown--link">Features</a>
+                <a href="" class="navbar__dropdown--link">Integrations</a>
+              </div>
+            </div>
+          </li>
+         <li class="navbar__list">
+            <div class="navbar__dropdown">
+              <button class="navbar__dropbtn">Company
+                <div class="navbar__dropbtn--ico"></div>
+              </button>
+              <div class="navbar__dropdown--content">
+                <a href="" class="navbar__dropdown--link">About</a>
+                <a href="" class="navbar__dropdown--link">Team</a>
+                <a href="" class="navbar__dropdown--link">Blog</a>
+                <a href="" class="navbar__dropdown--link">Careers</a>
+              </div>
+            </div>
+          </li>
+          <li class="navbar__list">
+            <div class="navbar__dropdown">
+              <button class="navbar__dropbtn">Connect
+                <div class="navbar__dropbtn--ico"></div>
+              </button>
+              <div class="navbar__dropdown--content">
+                <a href="" class="navbar__dropdown--link">Contact</a>
+                <a href="" class="navbar__dropdown--link">Newsletter</a>
+                <a href="" class="navbar__dropdown--link">LinkedIn</a>
+              </div>
+            </div>
+          </li> 
+        </ul>
+
+        <div class="navbar__buttons">
+          <button class="navbar__login--btn">Login</button>
+          <button class="navbar__signup--btn">Sign up</button>
+        </div>
+      </nav>
     </div>
   </header>
 
