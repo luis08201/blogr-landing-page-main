@@ -64,7 +64,6 @@
             </div>
           </li> 
         </ul>
-
         <div class="navbar__buttons">
           <button class="navbar__login--btn">Login</button>
           <button class="navbar__signup--btn">Sign up</button>
@@ -139,25 +138,19 @@
   </div> -->
 
   <script>
-    const btn_product = document.querySelector('.header__btn-product');
-    const product__menu = document.querySelector('.product__menu');
+    var acc = document.getElementsByClassName("navbar__dropbtn");
+    var i;
 
-    const btn_company = document.querySelector('.header__btn-company');
-    const company__menu = document.querySelector('.company__menu');
-
-    function navbar_product() {
-
-      btn_product.classList.toggle('active');
-      product__menu.classList.toggle('active');
-
-
-    }
-
-    function navbar_company() {
-
-      btn_company.classList.toggle('active');
-      company__menu.classList.toggle('active');
-
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
     }
   </script>
 </body>
