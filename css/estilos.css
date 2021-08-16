@@ -742,6 +742,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 65vh;
+    margin: 120px 0 30px;
   }
   .second__container--bgi {
     background-image: url(../img/bg-pattern-circles.svg);
@@ -816,6 +817,140 @@ body {
     margin: 20px 0 5px;
     font-size: 14px;
     line-height: 30px;
+  }
+}
+
+.third__container {
+  position: relative;
+  padding: 64px 0;
+}
+
+.third__container--body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.third__container--picture {
+  position: absolute;
+  top: 0;
+  left: -253px;
+}
+
+.third__container--picture .third__container--img {
+  width: 900px;
+}
+
+.third__container--articles {
+  -ms-flex-preferred-size: 600px;
+      flex-basis: 600px;
+  margin-top: 110px;
+  margin-right: 100px;
+}
+
+.third__container--article .third__article--heading {
+  font-family: "Overpass", sans-serif;
+}
+
+.third__container--article .third__article--paragraph {
+  font-family: "Overpass", sans-serif;
+  margin: 20px 0;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+  .third__container--articles {
+    margin-top: 100px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .third__container--body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .third__container--articles {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin-top: 50px;
+    margin-right: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .third__container--picture {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .third__container--picture .third__container--img {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .third__container {
+    padding: 24px 0;
+  }
+  .third__container--picture {
+    position: relative;
+    top: 0;
+    right: 0;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    background-image: url(../img/illustration-laptop-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+  .third__container--picture .third__container--img {
+    display: none;
+  }
+  .third__container--article .third__article--heading {
+    font-family: "Overpass", sans-serif;
+    font-size: 28px;
+  }
+  .third__container--article .third__article--paragraph {
+    font-family: "Overpass", sans-serif;
+    margin: 30px 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .third__container--picture {
+    height: 200px;
+  }
+  .third__container--header {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .third__container--header .third__container--heading {
+    font-family: "Overpass", sans-serif;
+    font-size: 20px;
+  }
+  .third__container--article .third__article--heading {
+    font-size: 20px;
+  }
+  .third__container--article .third__article--paragraph {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
