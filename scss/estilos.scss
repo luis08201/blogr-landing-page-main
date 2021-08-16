@@ -20,7 +20,7 @@ body {
   background-size: 3000px;
   background-position: 25% 50%;
   width: 100%;
-  height: 90vh;
+  height: 65vh;
 }
 
 @media screen and (max-width: 599px) {
@@ -151,7 +151,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
+  height: 35vh;
 
   .header__banner--heading {
     font-family: $fuente-1;
@@ -197,25 +197,31 @@ body {
 @media screen and (max-width: 599px) {
   .header__banner {
     width: 90%;
-    height: 430px;
     .header__banner--heading {
       font-family: $fuente-1;
-      font-size: 38px;
+      font-size: 36px;
     }
   }
 }
 @media screen and (max-width: 280px) {
   .header__banner {
     width: 85%;
-    height: 390px;
     .header__banner--heading {
       font-family: $fuente-1;
-      font-size: 26px;
+      font-size: 20px;
     }
     .header__banner--paragraph {
       font-size: 15px;
     }
   }
+  .header__button {
+  .header__start--btn {
+    font-size:13px;
+  }
+  .header__learn--btn {
+   font-size:13px;
+  }
+}
 }
 @media screen and (max-width: 768px) {
   .main__header {
