@@ -775,6 +775,7 @@ body {
 @media screen and (max-width: 375px) {
   .second__container {
     height: 65vh;
+    margin: 30px 0 30px;
   }
   .second__container--bgi {
     background-image: url(../img/bg-pattern-circles.svg);
