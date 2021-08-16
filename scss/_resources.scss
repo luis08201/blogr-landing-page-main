@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 
 /* TYPOGRAPHY */
-$fuente-1: 'Overpass', sans-serif;
-$fuente-2: 'Ubuntu', sans-serif;
+$fuente-1: "Overpass", sans-serif;
+$fuente-2: "Ubuntu", sans-serif;
 
 /*COLOR*/
 
-/*PRIMARY*/    
-$light-red : #ff525d;  //(CTA text) 
-$very-light-red: #ff7a85; // (CTA hover background) 
-$very-dark-blue : #1f3f5b; // (headings) 
+/*PRIMARY*/
+$light-red: #ff525d; //(CTA text)
+$very-light-red: #ff7a85; // (CTA hover background)
+$very-dark-blue: #1f3f5b; // (headings)
 
 /*NEUTRAL*/
-$white : #ffffff; /* (text) */
-$grayish-blue: #c8c8cb;/*  (footer text) */
+$white: #ffffff; /* (text) */
+$grayish-blue: #c8c8cb; /*  (footer text) */
 $very-dark-grayish-blue: #4b5862; /*  (body copy) */
 $very-dark-black-blue: #25252d; /*  (footer background) */
 
@@ -27,9 +27,17 @@ $light-red: #ff3d54;
 $very-dark-gray-blue: #2c2d3f;
 $very-dark-desaturated-blue: #3f4164;
 
-
-%margenes{
-    max-width:1200px;
-    margin:40px auto;
-    padding:20px;
+%margenes {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+%botones {
+  width: 130px;
+  height: 40px;
+  font-family: $fuente-2;
+  font-size: 15px;
+  border: none;
+  border-radius: 32px;
+  font-weight: 500;
 }

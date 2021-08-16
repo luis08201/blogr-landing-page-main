@@ -16,6 +16,16 @@
   padding: 20px;
 }
 
+.navbar__signup--btn, .header__button .header__start--btn, .header__button .header__learn--btn {
+  width: 130px;
+  height: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  border: none;
+  border-radius: 32px;
+  font-weight: 500;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -38,6 +48,13 @@ body {
   background-position: 25% 50%;
   width: 100%;
   height: 90vh;
+}
+
+@media screen and (max-width: 599px) {
+  .main__header {
+    background-size: 1700px;
+    background-position: 40% 37%;
+  }
 }
 
 .submain__header {
@@ -176,23 +193,109 @@ body {
 }
 
 .navbar__signup--btn {
-  width: 130px;
-  height: 40px;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 15px;
-  border: none;
-  border-radius: 32px;
   background-color: #fff;
-  color: #ff8f70;
-  font-weight: 500;
+  color: #ff3d54;
   -webkit-transition: 640ms;
   transition: 640ms;
 }
 
 .navbar__signup--btn:hover {
   cursor: pointer;
-  background-color: #ff8f70;
+  background-color: #ff3d54;
   color: #fff;
+}
+
+.header__banner {
+  width: 100%;
+  margin: 0 auto 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+}
+
+.header__banner .header__banner--heading {
+  font-family: "Overpass", sans-serif;
+  font-size: 62px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.header__banner .header__banner--paragraph {
+  font-family: "Overpass", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+.header__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__button .header__start--btn {
+  background-color: #fff;
+  color: #ff3d54;
+  -webkit-transition: 640ms;
+  transition: 640ms;
+}
+
+.header__button .header__start--btn:hover {
+  cursor: pointer;
+  background-color: #ff3d54;
+  color: #fff;
+}
+
+.header__button .header__learn--btn {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 640ms;
+  transition: 640ms;
+}
+
+.header__button .header__learn--btn:hover {
+  background-color: #fff;
+  color: #ff3d54;
+}
+
+@media screen and (max-width: 599px) {
+  .header__banner {
+    width: 90%;
+    height: 430px;
+  }
+  .header__banner .header__banner--heading {
+    font-family: "Overpass", sans-serif;
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .header__banner {
+    width: 85%;
+    height: 390px;
+  }
+  .header__banner .header__banner--heading {
+    font-family: "Overpass", sans-serif;
+    font-size: 26px;
+  }
+  .header__banner .header__banner--paragraph {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {

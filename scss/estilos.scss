@@ -20,6 +20,14 @@ body {
   width: 100%;
   height: 90vh;
 }
+
+@media screen and (max-width:599px){
+    .main__header{
+      background-size: 1700px;
+      background-position: 40% 37%;
+    }
+}
+
 .submain__header {
   @extend %margenes;
   display: flex;
@@ -117,22 +125,93 @@ body {
   font-weight: 500;
 }
 .navbar__signup--btn {
-  width: 130px;
-  height: 40px;
-  font-family: $fuente-2;
-  font-size: 15px;
-  border: none;
-  border-radius: 32px;
+  @extend %botones;
   background-color: #fff;
-  color: $very-light-red;
-  font-weight: 500;
+  color: $light-red;
   transition: 640ms;
   &:hover {
     cursor: pointer;
-    background-color: $very-light-red;
+    background-color: $light-red;
     color: #fff;
   }
 }
+
+//HEADER BANNER
+.header__banner {
+  width: 100%;
+  margin:0 auto 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:500px;
+
+  .header__banner--heading {
+    font-family: $fuente-1;
+    font-size: 62px;
+    color: $white;
+    margin-bottom: 15px;
+  }
+  .header__banner--paragraph {
+    font-family: $fuente-1;
+    font-size: 20px;
+    color: $white;
+    margin-bottom: 35px;
+  }
+}
+.header__button {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  .header__start--btn {
+    @extend %botones;
+    background-color: #fff;
+    color: $light-red;
+    transition: 640ms;
+    &:hover {
+      cursor: pointer;
+      background-color: $light-red;
+      color: #fff;
+    }
+  }
+  .header__learn--btn {
+    @extend %botones;
+    border: 1px solid $white;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 640ms;
+    &:hover {
+      background-color: #fff;
+      color: $light-red;
+    }
+  }
+}
+@media screen and (max-width:599px){
+  .header__banner {
+    width:90%;
+     height:430px;
+  .header__banner--heading {
+    font-family: $fuente-1;
+    font-size: 38px;
+  }  
+}
+}
+@media screen and (max-width:280px){
+  .header__banner {
+    width:85%;
+     height:390px;
+  .header__banner--heading {
+    font-family: $fuente-1;
+    font-size: 26px;
+  }  
+  .header__banner--paragraph {
+    font-size: 15px;
+  }
+}
+}
+
+
 @media screen and (max-width: 768px) {
   .main__header {
     position: relative;
@@ -165,10 +244,10 @@ body {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     background-color: $white;
-    display:none;
+    display: none;
 
-    &.active{
-      display:flex;
+    &.active {
+      display: flex;
     }
   }
   .navbar__menu {
