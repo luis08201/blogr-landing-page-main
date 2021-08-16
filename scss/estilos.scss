@@ -790,6 +790,7 @@ body {
   background-color: $very-dark-gray-blue;
   border-top-right-radius: 120px;
   padding: 0.1px;
+  margin-top: 190px;
 }
 .submain__footer {
   @extend %margenes;
@@ -825,6 +826,11 @@ body {
       color: $white;
     }
   }
+}
+@media screen and (max-width:1024px){
+  .main__footer {
+  margin-top: 50px;
+}
 }
 @media screen and (max-width: 768px) {
   .submain__footer {
