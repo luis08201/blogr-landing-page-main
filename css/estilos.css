@@ -221,7 +221,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 500px;
+  height: 50vh;
 }
 
 .header__banner .header__banner--heading {
