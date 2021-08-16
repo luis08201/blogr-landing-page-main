@@ -35,6 +35,8 @@
 
 body {
   font-size: 16px;
+  overflow-x: hidden;
+  background-color: #fafafa;
 }
 
 .main__header {
@@ -471,6 +473,158 @@ body {
   .navbar__dropbtn:hover .navbar__dropbtn--ico {
     background-image: none;
     margin-left: 0;
+  }
+}
+
+.main__container {
+  padding: 0.1px;
+}
+
+.first__container {
+  position: relative;
+  padding: 128px 0;
+}
+
+.first__container--header {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.first__container--header .first__container--heading {
+  font-family: "Overpass", sans-serif;
+  font-size: 28px;
+}
+
+.first__container--body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first__container--articles {
+  -ms-flex-preferred-size: 600px;
+      flex-basis: 600px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.first__container--article .first__article--heading {
+  font-family: "Overpass", sans-serif;
+}
+
+.first__container--article .first__article--paragraph {
+  font-family: "Overpass", sans-serif;
+  margin: 20px 0;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.first__container--picture {
+  position: absolute;
+  top: 90px;
+  right: -260px;
+}
+
+.first__container--picture .first__container--img {
+  width: 900px;
+}
+
+@media screen and (max-width: 1280px) {
+  .first__container--articles {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  .first__container--picture {
+    position: absolute;
+    top: 140px;
+    right: -200px;
+  }
+  .first__container--picture .first__container--img {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .first__container--header {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .first__container--body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .first__container--articles {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin-top: 50px;
+    margin-left: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .first__container--picture {
+    position: relative;
+    top: 0;
+    right: 0;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .first__container--picture .first__container--img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .first__container--picture {
+    position: relative;
+    top: 0;
+    right: 0;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    background-image: url(../img/illustration-editor-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+  .first__container--picture .first__container--img {
+    display: none;
+  }
+  .first__container--article .first__article--heading {
+    font-family: "Overpass", sans-serif;
+    font-size: 28px;
+  }
+  .first__container--article .first__article--paragraph {
+    font-family: "Overpass", sans-serif;
+    margin: 30px 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .first__container--picture {
+    height: 200px;
+  }
+  .first__container--header {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .first__container--header .first__container--heading {
+    font-family: "Overpass", sans-serif;
+    font-size: 20px;
+  }
+  .first__container--article .first__article--heading {
+    font-size: 20px;
+  }
+  .first__container--article .first__article--paragraph {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
