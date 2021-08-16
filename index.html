@@ -19,7 +19,7 @@
         <figure class="header__picture">
           <img src="img/logo.svg" alt="" class="header__img">
         </figure>
-        <div class="menuToogle"></div>
+        <div class="menuToogle" onclick="toggleMenu();"></div>
       </nav>
       <nav class="header__navbar">
 
@@ -151,6 +151,15 @@
           panel.style.maxHeight = panel.scrollHeight + "px";
         }
       });
+    }
+  </script>
+  <script>
+    function toggleMenu() {
+      const menuToggle = document.querySelector('.menuToogle');
+      menuToggle.classList.toggle('active');
+
+    const header__navbar = document.querySelector('.header__navbar');
+      header__navbar.classList.toggle('active'); 
     }
   </script>
 </body>
