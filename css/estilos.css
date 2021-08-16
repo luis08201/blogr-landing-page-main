@@ -41,7 +41,7 @@ body {
 
 .main__header {
   padding: 0.1px;
-  background-color: #ff8f70;
+  background-color: #ff7a85;
   border-bottom-left-radius: 120px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff3d545d), to(#ff3d5444)), url(../img/bg-pattern-intro.svg);
   background-image: linear-gradient(#ff3d545d, #ff3d5444), url(../img/bg-pattern-intro.svg);
@@ -192,18 +192,25 @@ body {
   background-color: transparent;
   color: #fff;
   font-weight: 500;
+  -webkit-transition: 640ms;
+  transition: 640ms;
+}
+
+.navbar__login--btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .navbar__signup--btn {
   background-color: #fff;
-  color: #ff3d54;
+  color: #ff525d;
   -webkit-transition: 640ms;
   transition: 640ms;
 }
 
 .navbar__signup--btn:hover {
   cursor: pointer;
-  background-color: #ff3d54;
+  background-color: #ff525d;
   color: #fff;
 }
 
@@ -250,14 +257,14 @@ body {
 
 .header__button .header__start--btn {
   background-color: #fff;
-  color: #ff3d54;
+  color: #ff525d;
   -webkit-transition: 640ms;
   transition: 640ms;
 }
 
 .header__button .header__start--btn:hover {
   cursor: pointer;
-  background-color: #ff3d54;
+  background-color: #ff525d;
   color: #fff;
 }
 
@@ -272,7 +279,7 @@ body {
 
 .header__button .header__learn--btn:hover {
   background-color: #fff;
-  color: #ff3d54;
+  color: #ff525d;
 }
 
 @media screen and (max-width: 599px) {
@@ -436,9 +443,13 @@ body {
   .navbar__login--btn {
     color: #2c2d3f;
   }
+  .navbar__login--btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
   .navbar__signup--btn {
     background-color: none;
-    background-image: linear-gradient(150deg, #ff8f70, #ff3d54);
+    background-image: linear-gradient(150deg, #ff7a85, #ff525d);
     color: #ffffff;
     -webkit-transition: 640ms;
     transition: 640ms;
@@ -446,6 +457,7 @@ body {
   .navbar__signup--btn:hover {
     cursor: pointer;
     background-color: none;
+    background-image: linear-gradient(150deg, #ff8f70, #ff3d54);
   }
   .navbar__dropbtn:after {
     content: "";
